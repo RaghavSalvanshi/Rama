@@ -1,24 +1,45 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<widget xmlns		= "http://www.w3.org/ns/widgets"
-	xmlns:gap	= "http://phonegap.com/ns/1.0"
-	id		= "com.phonegap.getting.started"
-	version 	= "1.0.0">
+<?xml version="1.0" encoding="UTF-8"?>
+<widget xmlns       = "http://www.w3.org/ns/widgets"
+        id          = "http://example.org/exampleWidget"
+        version     = "2.0 Beta"
+        height      = "200"
+        width       = "200"
+        viewmodes   = "fullscreen">
+ 
+  <name short="Example 2.0">
+    The example Widget!
+  </name>
 
-	<name>PhoneGap: Getting Started</name>
+  <feature name="http://example.com/camera">
+    <param name="autofocus" value="true"/>
 
-	<description>
-		A template for getting started with PhoneGap development and build.phonegap.com
-	</description>
+  </feature>
 
-	<author href="http://alunny.github.com"
-		email="andrew.lunny@nitobi.com">
-		Andrew Lunny
-	</author>
+  <preference name     = "apikey"
+              value    = "ea31ad3a23fd2f"
+              readonly = "true" />
 
-	<icon src="icon.png" gap:role="default" />
+  <description>
+    A sample widget to demonstrate some of the possibilities.
+  </description>
 
-	<feature name="http://api.phonegap.com/1.0/geolocation"/>
-	<feature name="http://api.phonegap.com/1.0/network"/>
+  <author href  = "http://foo-bar.example.org/"
+          email = "foo-bar@example.org">Foo Bar Corp</author>
 
-	<preference name="orientation" value="portrait" />
+  <icon src="icons/example.png"/>
+  <icon src="icons/boo.png"/>
+  <content src="myWidget.html"/>
+
+  <license>
+Example license (based on MIT License)
+Copyright (c) 2008 The Foo Bar Corp.
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS
+OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
+IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY
+CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT,
+INSULT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
+SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+  </license>
 </widget>
